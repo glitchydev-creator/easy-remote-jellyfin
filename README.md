@@ -15,12 +15,13 @@ You will find in here the steps on how to get your jellyfin in docker. Get jelly
 
 5. Follow the instructions per your Linux distro to install tailscale.
 6. https://tailscale.com/kb/1174/install-debian-bookworm
-curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
-curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-sudo apt-get update
-sudo apt-get install tailscale
-sudo tailscale up
-Follow the instructions to authenticate your machine
+
+* curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+* curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+* sudo apt-get update
+* sudo apt-get install tailscale
+*  sudo tailscale up
+- Follow the instructions to authenticate your machine
 
 tailscale ip -4  
 save this IP for later you will use this to route your jellyfin on 8096 to your VPS
