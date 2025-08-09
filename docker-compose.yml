@@ -1,0 +1,15 @@
+#this is the docker compose file for your local media server
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest # Latest stable as of 2025-08
+    container_name: jellyfin
+    restart: unless-stopped
+    ports:
+      - "8096:8096" # HTTP port
+    environment:
+      TZ: "America/Chicago" # Set your local timezone
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - /usr/share/Media/Movies:/Movies   # First media library
+      - /usr/share/Media/TV:/tvshows # Second media library
