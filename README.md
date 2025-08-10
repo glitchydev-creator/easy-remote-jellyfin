@@ -11,7 +11,7 @@ You will find in here the steps on how to get your jellyfin in docker. Get jelly
 
 3. Perform the similar tasks on the VPS server
 
-4. On your primary non VPS server you will install tailscale and nginx proxy manager in docker. You will have to create an account which is free. Once you create the tailscale account you can download and run it on your system
+4. On your primary  VPS server you will install tailscale. then compose the jellyfin in docker. You will have to create an account which is free for tailscale. Once you create the tailscale account you can download and run it on your system
 
 5. Follow the instructions per your Linux distro to install tailscale.
 6. https://tailscale.com/kb/1174/install-debian-bookworm
