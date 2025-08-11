@@ -11,7 +11,7 @@ You will find in here the steps on how to get your jellyfin in docker. Get jelly
 
 3. Perform the similar tasks on the VPS server
 
-4. On your primary  VPS server you will install tailscale. then compose the jellyfin in docker. You will have to create an account which is free for tailscale. Once you create the tailscale account you can download and run it on your system
+4. On your primary  server you will install tailscale. then compose the jellyfin in docker. You will have to create an account which is free for tailscale. Once you create the tailscale account you can download and run it on your system
 
 5. Follow the instructions per your Linux distro to install tailscale.
 6. https://tailscale.com/kb/1174/install-debian-bookworm
@@ -30,7 +30,7 @@ save this IP for later you will use this to route your jellyfin on 8096 to your 
 
 9. Then you run jellyfin with docker compose on your local server. Use the included Docker compose or modify for your machine. This will run on port 8096 on your local box.
 
-10. On the server install tailscale and docker compose follow the instructions to download and install docker compose on your OS. I will provide how to on Debian 12 as of this writing.
+10. On the vps server install tailscale and docker compose follow the instructions to download and install docker compose on your OS. I will provide how to on Debian 12 as of this writing.
 Perform these tasks on thhe VPS server 
 Add Docker’s GPG Key:
 
